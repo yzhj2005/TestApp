@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="app.test.com.testapp.MainActivity">
+
+    <!--<app.test.com.testapp.bezier.BezierView-->
+    <!--android:layout_width="match_parent"-->
+    <!--android:layout_height="match_parent"-->
+    <!--android:background="@android:color/transparent"/>-->
+
+
+    <app.test.com.testapp.custom.DragDeleteTextView
+        android:id="@+id/ddtv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="50"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="42dp"/>
+
+    <app.test.com.testapp.custom.DragDeleteTextView
+        android:id="@+id/ddtv2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:text="99+"
+        android:textColor="#ffffff"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="149dp"
+        android:layout_marginTop="42dp"/>
+
+
+    <Button
+        android:id="@+id/btn_eventbus"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_http_test"
+        android:layout_alignParentStart="true"
+        android:gravity="center"
+        android:text="EventBus"/>
+
+    <Button
+        android:id="@+id/btn_http_test"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_pull_to_refresh"
+        android:layout_alignStart="@+id/btn_pull_to_refresh"
+        android:gravity="center"
+        android:text="Http测试"/>
+
+    <Button
+        android:id="@+id/btn_pull_to_refresh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/linearLayout"
+        android:layout_alignParentEnd="true"
+        android:gravity="center"
+        android:text="下拉刷新"/>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_showbar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="显示任务栏"/>
+
+        <Button
+            android:id="@+id/btn_hidebar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="隐藏任务栏"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_chart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/btn_eventbus"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentStart="true"
+        android:text="图表"/>
+
+
+</RelativeLayout>
